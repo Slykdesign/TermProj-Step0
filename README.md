@@ -1,16 +1,16 @@
 # TermProj-Step0-Preparation
-# Goals
-# • Learn about the five basic low-level UNIX file access functions
-# • Create two functions to display memory regions
-# Details
-# UNIX has five basic file access system calls:
-# • int open(char *fn,int mode)
-# Open the file whose name is given. The filename can be either a relative or absolute path.
-# Mode indicates whether the file is opened read-only (O_RDONLY), write-only (O_WRONLY) or read-write (O_RDWR). The function returns a nonnegative integer — the file handle — if the function succeeds, or −1 if the function fails.
-# • void close(int fd)
-# Close the file whose handle is given.
-# • ssize_t read(int fd,void *buf,size_t count)
-# Reads the given number of bytes from the given open file, placing the bytes in the given buffer. The location of the first byte read is given by the file’s cursor; subsequent bytes are read sequentially and the cursor is advanced to the end of the block that is read.
+## Goals
+### • Learn about the five basic low-level UNIX file access functions
+### • Create two functions to display memory regions
+## Details
+### UNIX has five basic file access system calls:
+#### • int open(char *fn,int mode)
+### Open the file whose name is given. The filename can be either a relative or absolute path.
+### Mode indicates whether the file is opened read-only (O_RDONLY), write-only (O_WRONLY) or read-write (O_RDWR). The function returns a nonnegative integer — the file handle — if the function succeeds, or −1 if the function fails.
+#### • void close(int fd)
+### Close the file whose handle is given.
+#### • ssize_t read(int fd,void *buf,size_t count)
+### Reads the given number of bytes from the given open file, placing the bytes in the given buffer. The location of the first byte read is given by the file’s cursor; subsequent bytes are read sequentially and the cursor is advanced to the end of the block that is read.
 # • ssize_t write(int fd,void *buf,size_t count)
 # Writes the given number of bytes to the given file, starting at the cursor. Bytes are written sequentially and the cursor is advanced to the end of the written block. Bytes to be written are located in the given buffer.
 # • off_t lseek(int fd,off_t offset,int anchor)
