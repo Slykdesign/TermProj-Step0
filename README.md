@@ -29,6 +29,7 @@
 ### The functions should display each 256-byte block in two forms: hexadecimal and character. A byte with offset o ƒ ƒ within the 256-byte block should be displayed in hexadecimal if skip ≤ oƒƒ < skip+count and should also be displayed as a character if it is printable (isprint() returns true).
 ### These display functions are for your use in building your program. They aren’t part of the final product, but they may prove helpful in debugging steps along the way.
 ### Format the output to make it easily readable. Here are some examples; your code doesn’t have to replicate this format exactly, this is just to give you an idea of what the output looks like.
+
 ## Example 1
 ### This is the VDI header from a sample VDI file. It’s a 400-byte structure found at the start of a VDI file.
 #### A 400-byte buffer was read and displayed using the function call displayBuffer(headerBuf,400,0);
@@ -80,20 +81,13 @@
 ##### +-----------------------------------------------+  +----------------+
 ##### 00|00 00 00 00 01 00 00 00 02 00 00 00 03 00 00 00|00|                
 #####|
-##### 10|04 00 00 00 05 00 00 00 06 00 00 00 07 00 00 00|10|                
-##### 20|08 00 00 00 09 00 00 00 0a 00 00 00 0b 00 00 00|20|                
-##### 30|0c 00 00 00 0d 00 00 00 0e 00 00 00 0f 00 00 00|30|                
-##### 40|10 00 00 00 11 00 00 00 12 00 00 00 13 00 00 00|40|                
-##### 50|14 00 00 00 15 00 00 00 16 00 00 00 17 00 00 00|50|                
-##### 60|18 00 00 00 19 00 00 00 1a 00 00 00 1b 00 00 00|60|                
-##### 70|1c 00 00 00 1d 00 00 00 1e 00 00 00 1f 00 00 00|70|                
-#####   |
-#####   |
-#####   |
-#####   |
-#####   |
-#####   |
-#####   |
+##### 10|04 00 00 00 05 00 00 00 06 00 00 00 07 00 00 00|10|                 |
+##### 20|08 00 00 00 09 00 00 00 0a 00 00 00 0b 00 00 00|20|                 |
+##### 30|0c 00 00 00 0d 00 00 00 0e 00 00 00 0f 00 00 00|30|                 |
+##### 40|10 00 00 00 11 00 00 00 12 00 00 00 13 00 00 00|40|                 |
+##### 50|14 00 00 00 15 00 00 00 16 00 00 00 17 00 00 00|50|                 |
+##### 60|18 00 00 00 19 00 00 00 1a 00 00 00 1b 00 00 00|60|                 |
+##### 70|1c 00 00 00 1d 00 00 00 1e 00 00 00 1f 00 00 00|70|                 |
 ##### 80|20 00 00 00 21 00 00 00 22 00 00 00 23 00 00 00|80|    !   "   #   |
 ##### 90|24 00 00 00 25 00 00 00 26 00 00 00 27 00 00 00|90|$   %   &   ’   |
 ##### a0|28 00 00 00 29 00 00 00 2a 00 00 00 2b 00 00 00|a0|(   )   *   +   |
