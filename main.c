@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <ctype.h>
 
-#define BUFFER_SIZE 1024  // Adjust based on file size
+#define BUFFER_SIZE 512  // Adjust based on file size
 
 // Function prototypes
 void displayBufferPage(uint8_t *buf, uint32_t count, uint32_t skip, uint64_t offset);
